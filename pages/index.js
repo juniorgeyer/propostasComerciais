@@ -6,79 +6,89 @@ import Footer from "../components/Footer";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
 import FAQ from "../components/FAQ";
-
 const featureData = [
   {
-    title: "Gestão de Matrículas e Controle de Grupos",
-    items: ["Cadastro de Alunos", "Formação de Grupos", "Matrículas"],
-  },
-  {
-    title: "Gestão Financeira e Controle de Valores a Receber e Pagar",
+    title: "Soluções Personalizadas",
     items: [
-      "Entidades Financeiras: Cadastro e gerenciamento de Matriz, Franquias e Professores. Definição de taxas de royalties entre Matriz, Franquias e Professores.",
-      "Transações Financeiras: Registro de pagamentos recebidos dos alunos. Cálculo automático dos royalties a serem pagos. Registro de comprovantes de transações financeiras. Relatórios de valores a receber e a pagar para cada entidade.",
+      "Desenvolvimento sob medida para atender as necessidades específicas do seu negócio.",
+      "Consultoria dedicada para entender e solucionar os desafios do seu projeto.",
+      "Integração perfeita com sistemas existentes e novas tecnologias.",
     ],
   },
   {
-    title: "Controle de Leads, Alunos Ativos e Ex-Alunos (CRM Básico)",
-    items: ["Cadastro de Leads", "Gestão de Alunos Ativos"],
-  },
-  {
-    title: "Disponibilização de Materiais Didáticos",
+    title: "Tecnologia de Ponta",
     items: [
-      "Acesso a Livros (PDF): Upload de materiais didáticos (PDFs) pelos administradores; Acesso controlado aos professores; Acesso controlado aos alunos.",
+      "Utilização das mais recentes tecnologias para garantir a máxima eficiência e desempenho.",
+      "Implementação de infraestruturas robustas e seguras.",
+      "Adoção de melhores práticas de desenvolvimento e segurança.",
     ],
   },
   {
-    title: "Gestão de Agenda e Aulas dos Professores",
-    items: ["Agenda de Aulas e Relatórios de Aulas"],
+    title: "Suporte Contínuo",
+    items: [
+      "Suporte técnico especializado disponível 24/7.",
+      "Monitoramento proativo e manutenção regular.",
+      "Treinamento e capacitação para a sua equipe.",
+    ],
   },
   {
-    title: "Análise Financeira e de Metas",
-    items: ["Análise Financeira e Metas e Desempenho Educacional"],
+    title: "Escalabilidade e Flexibilidade",
+    items: [
+      "Soluções escaláveis para acompanhar o crescimento do seu negócio.",
+      "Flexibilidade para adaptações e melhorias contínuas.",
+      "Capacidade de atender desde pequenas empresas até grandes corporações.",
+    ],
   },
   {
-    title: "Geração Automática de Contratos",
-    items: ["Contratos com Professores, Alunos e Franquias"],
+    title: "Experiência e Expertise",
+    items: [
+      "Equipe de profissionais experientes e altamente qualificados.",
+      "Histórico comprovado de sucesso em projetos diversos.",
+      "Parcerias estratégicas com líderes do setor de tecnologia.",
+    ],
+  },
+  {
+    title: "Custo-Benefício",
+    items: [
+      "Planos de pagamento flexíveis e adaptados ao seu orçamento.",
+      "Transparência nos custos e nos processos.",
+      "Alta qualidade a um preço competitivo.",
+    ],
+  },
+  {
+    title: "Inovação Constante",
+    items: [
+      "Investimento contínuo em pesquisa e desenvolvimento.",
+      "Acompanhamento das tendências de mercado e inovações tecnológicas.",
+      "Implementação de soluções inovadoras para manter seu negócio à frente.",
+    ],
   },
 ];
-
 const pricingData = [
   {
-    plan: "Hobby",
-    price: "$10",
-    description: "All the basics for your side project.",
-    features: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    ],
-    buttonLabel: "Buy Hobby",
+    plan: "Opção 1: Pagamentos Mensais",
+    price: "6x R$ 7.541,65",
+    description: "Pagamento parcelado em 6 vezes.",
+    features: ["6 Parcelas de R$ 7.541,65"],
+    buttonLabel: "Escolher Opção 1",
   },
   {
-    plan: "Freelancer",
-    price: "$20",
-    description: "All the basics for starting your business.",
+    plan: "Opção 2: Entrada + Parcelas",
+    price: "R$ 45.250,00",
+    description: "Pagamento com entrada e parcelas mensais.",
     features: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "Duis aute irure dolor in reprehenderit in voluptate",
+      "Entrada: R$ 15.837,50",
+      "5 Parcelas de R$ 4.977,50",
+      "Finalização: R$ 4.525,00",
     ],
-    buttonLabel: "Buy Freelancer",
+    buttonLabel: "Escolher Opção 2",
   },
   {
-    plan: "Enterprise",
-    price: "$30",
-    description: "All the basics for your enterprise.",
-    features: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "Duis aute irure dolor in reprehenderit in voluptate",
-      "Excepteur sint occaecat cupidatat non proident",
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum",
-    ],
-    buttonLabel: "Buy Enterprise",
+    plan: "Opção 3: Pagamento Único",
+    price: "R$ 40.000,00",
+    description: "Pagamento à vista.",
+    features: ["Pagamento total de R$ 40.000,00 à vista."],
+    buttonLabel: "Escolher Opção 3",
   },
 ];
 

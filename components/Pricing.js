@@ -30,7 +30,7 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
         <span className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
           {price}
         </span>
-        <span className="text-base font-medium text-gray-500">/mo</span>
+        <span className="text-base font-medium text-gray-500"></span>
         <a
           href="#"
           className="block w-full py-2 mt-8 text-sm font-semibold text-center text-gray-300 transition duration-300 bg-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-600 dark:text-gray-200 dark:bg-gray-800"
@@ -40,7 +40,7 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
       </div>
       <div className="w-full border border-gray-300 dark:border-gray-500" />
       <h1 className="text-sm font-semibold text-gray-500 uppercase">
-        What&apos;s included
+        O que está incluído:
       </h1>
       <p className="font-normal text-gray-500 dark:text-gray-400 text-md">
         <ul>
