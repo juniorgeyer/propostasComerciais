@@ -32,12 +32,12 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
         </span>
         <p>Forma de pagamento: a negociar</p>
         <span className="text-base font-medium text-gray-500"></span>
-        <a
-          href="#"
+        <button
+          onClick={() => enviarMensagem(plan)}
           className="block w-full py-2 mt-8 text-sm font-semibold text-center text-gray-300 transition duration-300 bg-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-600 dark:text-gray-200 dark:bg-gray-800"
         >
           {buttonLabel}
-        </a>
+        </button>
       </div>
       <div className="w-full border border-gray-300 dark:border-gray-500" />
       <h1 className="text-sm font-semibold text-gray-500 uppercase">
@@ -55,6 +55,15 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
   );
 };
 
+const enviarMensagem = (plan) => {
+  let texto = `Olá, gostaria de saber mais sobre o plano ${plan}`;
+  texto = encodeURIComponent(texto);
+  window.open(
+    `https://api.whatsapp.com/send?phone=5594991006004&text=${texto}`,
+    "_blank"
+  );
+};
+
 const handleFormatPrice = (price) => {
   return new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -63,7 +72,6 @@ const handleFormatPrice = (price) => {
 };
 
 export default function Pricing({ pricing }) {
-  console.log(pricing);
   return (
     <section id="pricing" className="py-12">
       <div className="max-w-xl px-4 py-12 mx-auto sm:px-6 lg:max-w-6xl lg:px-8">
