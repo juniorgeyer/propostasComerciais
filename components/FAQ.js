@@ -1,7 +1,7 @@
 const FAQItem = ({ title, items }) => {
   return (
     <div className="p-5 mt-5 mb-10 space-y-6 border shadow-md rounded-2xl">
-      <h1 className="text-xl font-bold text-center text-teal-600 dark:text-teal-300 md:text-2xl sm:text-left">
+      <h1 className="text-xl font-bold text-center text-sky-600 dark:text-sky-300 md:text-2xl sm:text-left">
         {title}
       </h1>
       <ul className="font-normal text-gray-500 dark:text-gray-400 text-md">

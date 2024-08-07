@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex flex-row items-center justify-between p-2 md:p-1">
           <Link href="/">
             <a className="mb-4 text-2xl font-medium text-black transition duration-300 hover:text-gray-300 dark:text-gray-300 dark:hover:text-white md:mb-0">
-              PLUTONIUM
+              CTECH
             </a>
           </Link>
           <button
@@ -52,22 +52,17 @@ export default function Header() {
         >
           <div className="flex flex-wrap items-center justify-center pt-1 pl-2 ml-1 space-x-8 md:space-x-16 md:mx-auto md:pl-14">
             <a
-              href="/features"
+              href="/#faq"
               className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300"
             >
-              Features
+              Módulos
             </a>
             <a
-              href="/pricing"
+              href="/#pricing"
               className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300"
             >
-              Pricing
+              Preços
             </a>
-            <Link href="/404">
-              <a className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300">
-                Demo
-              </a>
-            </Link>
           </div>
           <button
             aria-label="Toggle Dark Mode"
@@ -101,7 +96,7 @@ export default function Header() {
               </svg>
             )}
           </button>
-          <a
+          {/* <a
             href="#"
             rel="noopener noreferrer"
             target="_blank"
@@ -116,7 +111,7 @@ export default function Header() {
             className="invisible md:visible px-3 py-1.5 transition-colors hover:bg-gray-800 dark:hover:bg-gray-200 text-white dark:text-black bg-black dark:bg-white rounded"
           >
             Sign up
-          </a>
+          </a> */}
         </div>
       </div>
     </header>

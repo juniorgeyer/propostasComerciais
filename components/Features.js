@@ -8,7 +8,7 @@ const Feature = ({ title, items }) => {
         <ul>
           {items.map((item, idx) => (
             <li key={idx} className="mb-2">
-              {item}
+              {item.name}
             </li>
           ))}
         </ul>
@@ -18,6 +18,7 @@ const Feature = ({ title, items }) => {
 };
 
 export default function Features({ features }) {
+  console.log(features);
   return (
     <section id="features" className="py-12">
       <div className="max-w-xl px-4 py-12 mx-auto sm:px-6 lg:max-w-6xl lg:px-8">
@@ -36,9 +37,14 @@ export default function Features({ features }) {
           necessidades. Veja abaixo as funcionalidades incluídas.
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, index) => (
-            <Feature key={index} title={feature.title} items={feature.items} />
-          ))}
+          {features &&
+            features.map((feature, index) => (
+              <Feature
+                key={index}
+                title={feature.title}
+                items={feature.items}
+              />
+            ))}
         </div>
       </div>
     </section>

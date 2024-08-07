@@ -44,16 +44,25 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
       </h1>
       <p className="font-normal text-gray-500 dark:text-gray-400 text-md">
         <ul>
-          {features.map((feature, idx) => (
-            <Feature key={idx} text={feature} />
-          ))}
+          {features &&
+            features.map((feature, idx) => (
+              <Feature key={idx} text={feature.name} />
+            ))}
         </ul>
       </p>
     </div>
   );
 };
 
+const handleFormatPrice = (price) => {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(price);
+};
+
 export default function Pricing({ pricing }) {
+  console.log(pricing);
   return (
     <section id="pricing" className="py-12">
       <div className="max-w-xl px-4 py-12 mx-auto sm:px-6 lg:max-w-6xl lg:px-8">
@@ -66,16 +75,17 @@ export default function Pricing({ pricing }) {
         </h1>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {pricing.map((data, index) => (
-            <PricingCard
-              key={index}
-              plan={data.plan}
-              price={data.price}
-              description={data.description}
-              features={data.features}
-              buttonLabel={data.buttonLabel}
-            />
-          ))}
+          {pricing &&
+            pricing.map((data, index) => (
+              <PricingCard
+                key={index}
+                plan={data.Plan}
+                price={handleFormatPrice(data.Price)}
+                description={data.Description}
+                features={data.Features}
+                buttonLabel={data.ButtonLabel || "Escolho esse plano"}
+              />
+            ))}
         </div>
       </div>
     </section>
