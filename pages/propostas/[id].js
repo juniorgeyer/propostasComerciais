@@ -95,7 +95,7 @@ export default function Home({ pageData }) {
                   aria-label="learn more"
                   href="https://wa.me/5594991006004"
                 >
-                  <span className="flex justify-center">Entra em contato</span>
+                  <span className="flex justify-center">Entrar em contato</span>
                 </a>
               </Link>
             </div>
