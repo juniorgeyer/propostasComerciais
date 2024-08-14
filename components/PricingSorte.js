@@ -56,7 +56,7 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
 };
 
 const enviarMensagem = (plan) => {
-  let texto = `Olá, gostaria de saber mais sobre o plano ${plan}`;
+  let texto = `Olá, gostaria de confirmar o plano ${plan}`;
   texto = encodeURIComponent(texto);
   window.open(
     `https://api.whatsapp.com/send?phone=5594991006004&text=${texto}`,
@@ -92,7 +92,7 @@ export default function Pricing({ pricing }) {
                 price={handleFormatPrice(data.Price)}
                 description={data.Description}
                 features={data.Features}
-                buttonLabel={data.ButtonLabel || "Escolho esse plano"}
+                buttonLabel={data.ButtonLabel || "Escolha esse plano"}
               />
             ))}
         </div>

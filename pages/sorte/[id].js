@@ -66,7 +66,7 @@ const pricingData = [
       { id: 2, name: "Relatórios mensais de desempenho" },
       { id: 3, name: "Adaptação de estratégias conforme resultados" },
     ],
-    ButtonLabel: "Escolho esse plano",
+    ButtonLabel: "Escolha esse plano",
   },
 ];
 
