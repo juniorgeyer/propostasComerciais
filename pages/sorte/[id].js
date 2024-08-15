@@ -136,8 +136,7 @@ export default function Home({ pageData }) {
               Aqui está a sua proposta
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 dark:from-pink-500 dark:via-purple-400 dark:to-indigo-500">
-                {/* {pageData ? pageData.Client : "CTECH"} */}
-                BetFast
+                {pageData ? pageData.Client : "CTECH"}
               </span>
             </h1>
             <p className="max-w-xl pt-5 mx-auto text-lg text-gray-600 dark:text-gray-400 md:text-lg">
