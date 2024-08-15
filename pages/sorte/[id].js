@@ -36,11 +36,9 @@ const features = [
     ],
   },
   {
-    title: "Criação de Conteúdo Personalizado e Criativos Atraentes",
+    title:
+      "Assessoria na criação de Conteúdo Personalizado e Criativos Atraentes",
     items: [
-      {
-        name: "Desenvolvimento de conteúdo e criativos visualmente impactantes",
-      },
       { name: "Personalização de anúncios para diferentes públicos" },
       { name: "Acesso a uma equipe especializada em design e copywriting" },
     ],
