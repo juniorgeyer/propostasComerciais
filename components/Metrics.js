@@ -1,22 +1,20 @@
-import Image from "next/image";
+import { FaChartLine, FaBullseye, FaRegClock, FaCogs } from "react-icons/fa";
 
-const MetricCard = ({ imageSrc, title, description }) => {
+const MetricCard = ({ Icon, title, description }) => {
   return (
     <div className="p-5 mt-5 mb-10 space-y-4 border shadow-md rounded-2xl">
       <div className="flex justify-center">
-        <Image
-          src={imageSrc}
-          alt={title}
-          width={264}
-          height={164}
-          className=""
-        />
+        <Icon style={{ color: "#000" }} className="w-16 h-16 text-indigo-500" />
       </div>
       <h1 className="text-lg font-bold text-center text-gray-800 dark:text-gray-200">
         {title}
       </h1>
       <p className="text-center text-gray-600 dark:text-gray-400">
-        {description}
+        <span
+          dangerouslySetInnerHTML={{
+            __html: description,
+          }}
+        />
       </p>
     </div>
   );
@@ -25,25 +23,25 @@ const MetricCard = ({ imageSrc, title, description }) => {
 export default function Metrics() {
   const metrics = [
     {
-      imageSrc: "/images/roi.jpeg",
+      Icon: FaChartLine,
       title: "Nosso ROI",
       description:
-        "Garantimos um retorno sobre o investimento otimizado, maximizando o valor de cada real investido.",
+        "Com um custo médio de <b>R$ 15,00 por depositante</b>, conseguimos trazer bons resultados para sua plataforma.",
     },
     {
-      imageSrc: "/images/dash.jpeg",
+      Icon: FaBullseye,
       title: "Tipo de Campanha",
       description:
-        "Especialistas em campanhas personalizadas, adequadas para diferentes plataformas e objetivos.",
+        "Especialistas em campanhas personalizadas, adequadas para diferentes plataformas e objetivos. <b>A taxa de conversão tem uma média maior que 50%</b>",
     },
     {
-      imageSrc: "/images/acomp.jpeg",
+      Icon: FaRegClock,
       title: "Nosso Acompanhamento",
       description:
-        "Acompanhamento contínuo com relatórios detalhados e ajustes estratégicos a cada HORA.",
+        "Acompanhamento contínuo com relatórios detalhados e ajustes <b>estratégicos a cada HORA</b>. Recebemos relatório de cada campanha a cada 60 minutos e analisamos para ter o melhor resultado. ",
     },
     {
-      imageSrc: "/images/automacao.jpeg",
+      Icon: FaCogs,
       title: "Automações",
       description:
         "Podemos desenvolver a automação que você precisar para ver seus resultados em tempo real",
@@ -68,7 +66,7 @@ export default function Metrics() {
           {metrics.map((metric, index) => (
             <MetricCard
               key={index}
-              imageSrc={metric.imageSrc}
+              Icon={metric.Icon}
               title={metric.title}
               description={metric.description}
             />
