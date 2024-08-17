@@ -6,24 +6,8 @@ import Footer from "../../components/Footer";
 import Features from "../../components/Features";
 import Pricing from "../../components/Pricing";
 import FAQ from "../../components/FAQ";
-export async function getStaticPaths() {
-  const res = await fetch(
-    "https://cms-sorte-esportiva.herokuapp.com/api/tender-pages?populate=*"
-  );
-  const data = await res.json();
 
-  const paths = data.data.map((page) => ({
-    params: { id: page.attributes.slug.toString() }, // Ensure the slug is a string
-  }));
-
-  return {
-    paths,
-    fallback: false, // Set to 'blocking' or 'true' if you want to enable incremental static generation
-  };
-}
-
-// Fetch the data for each page
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const res = await fetch(
     `https://cms-sorte-esportiva.herokuapp.com/api/tender-pages?populate[Plans][populate]=Features&populate[Features][populate]=*&filters[slug][$eq]=${params.id}`
   );
@@ -31,13 +15,10 @@ export async function getStaticProps({ params }) {
 
   const pageData = data.data[0].attributes || null;
 
-  console.log(pageData);
-
   return {
     props: {
       pageData,
     },
-    revalidate: 10, // Revalida a cada 10 segundos, ajuste conforme necessário
   };
 }
 
