@@ -56,12 +56,12 @@ const features = [
 const pricingData = [
   {
     Plan: "Plano Premium",
-    Price: 40000,
+    Price: 30000,
     Description: "Mais 1.5% de depósito",
     Features: [
       { id: 1, name: "Acompanhamento diário de campanhas" },
 
-      { id: 2, name: "Relatórios mensais de desempenho" },
+      { id: 2, name: "Automação de mensagens" },
       { id: 3, name: "Adaptação de estratégias conforme resultados" },
     ],
     ButtonLabel: "Escolha esse plano",
