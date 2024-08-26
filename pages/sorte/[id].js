@@ -76,6 +76,8 @@ export async function getServerSideProps({ params }) {
 
   const pageData = data.data[0].attributes || null;
 
+  console.log(pageData);
+
   return {
     props: {
       pageData,
@@ -147,7 +149,7 @@ export default function Home({ pageData }) {
       </section>
       <Metrics metrics={pageData.Metrics || null} />
       <Features features={features} />
-      <Pricing pricing={pricingData} />
+      <Pricing pricing={pageData.Plans ? pageData.Plans : pricingData} />
       {/* <FAQ faqItems={pageData?.faqData || faqData} />*/}
       <Footer />
     </div>
