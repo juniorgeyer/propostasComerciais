@@ -1,4 +1,4 @@
-import { FaChartLine, FaBullseye, FaRegClock, FaCogs } from "react-icons/fa";
+import { FaBullseye, FaRegClock, FaCogs, FaMoneyBillWave, FaSolarPanel, FaChartLine, FaMoneyCheckAlt, FaHandsHelping } from "react-icons/fa";
 
 const MetricCard = ({ Icon, title, description }) => {
   return (
@@ -23,28 +23,28 @@ const MetricCard = ({ Icon, title, description }) => {
 export default function Metrics() {
   const metrics = [
     {
-      Icon: FaChartLine,
-      title: "Nosso ROI",
+      Icon: FaSolarPanel,
+      title: "Soluções de Energia Fotovoltaica",
       description:
-        "Com um custo médio de <b>R$ 15,00 por depositante</b>, conseguimos trazer bons resultados para sua plataforma.",
+        "Desenvolvemos sistemas solares para residências, empresas e indústrias.",
     },
     {
-      Icon: FaBullseye,
-      title: "Tipo de Campanha",
+      Icon: FaChartLine ,
+      title: "Compromisso com a Performance",
       description:
-        "Especialistas em campanhas personalizadas, adequadas para diferentes plataformas e objetivos. <b>A taxa de conversão tem uma média maior que 50%</b>",
+        "Garantimos a produção de energia eficiente e de alta performance.",
     },
     {
-      Icon: FaRegClock,
-      title: "Nosso Acompanhamento",
+      Icon: FaMoneyCheckAlt,
+      title: "Financiamento Personalizado",
       description:
-        "Acompanhamento contínuo com relatórios detalhados e ajustes <b>estratégicos a cada HORA</b>. Recebemos relatório de cada campanha a cada 60 minutos e analisamos para ter o melhor resultado. ",
+        "Oferecemos soluções exclusivas de financiamento para seu projeto solar.",
     },
     {
-      Icon: FaCogs,
-      title: "Automações",
+      Icon: FaHandsHelping,
+      title: "Suporte Completo",
       description:
-        "Podemos desenvolver a automação que você precisar para ver seus resultados em tempo real",
+        "Cuidamos de todo o processo junto à distribuidora de energia.",
     },
   ];
 
@@ -52,9 +52,9 @@ export default function Metrics() {
     <section id="metrics" className="py-12">
       <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
         <h1 className="mb-8 text-2xl font-bold tracking-normal text-center text-gray-800 md:leading-tight md:tracking-normal dark:text-gray-200 md:text-4xl">
-          Nossas{" "}
+          Nosso{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-rose-500">
-            Métricas
+            Diferencial
           </span>{" "}
           de Sucesso
         </h1>

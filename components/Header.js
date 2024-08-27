@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Header() {
         <div className="flex flex-row items-center justify-between p-2 md:p-1">
           <Link href="/">
             <a className="mb-4 text-2xl font-medium text-black transition duration-300 hover:text-gray-300 dark:text-gray-300 dark:hover:text-white md:mb-0">
-              CTECH
+              MS MEGA SOLAR
             </a>
           </Link>
           <button
