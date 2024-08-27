@@ -30,7 +30,10 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
         <span className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
           {price}
         </span>
+
         <p>Forma de pagamento: a vista</p>
+
+
         <span className="text-base font-medium text-gray-500"></span>
         <button
           onClick={() => enviarMensagem(plan)}
