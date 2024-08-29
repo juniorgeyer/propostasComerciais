@@ -33,7 +33,6 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
 
         <p>Forma de pagamento: a vista</p>
 
-
         <span className="text-base font-medium text-gray-500"></span>
         <button
           onClick={() => enviarMensagem(plan)}
@@ -81,7 +80,7 @@ export default function Pricing({ pricing }) {
         <h1 className="mb-8 text-2xl font-bold tracking-normal text-center text-gray-800 md:leading-tight md:tracking-normal dark:text-gray-200 md:text-4xl">
           E qual seria o investimento para a{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-rose-500 dark:from-indigo-400 dark:via-fuchsia-400 dark:to-rose-400">
-            SUA PROPRIA ENERGIA?
+            o seu tráfego aumentar?
           </span>{" "}
         </h1>
 

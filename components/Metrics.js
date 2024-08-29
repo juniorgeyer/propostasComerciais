@@ -1,4 +1,13 @@
-import { FaBullseye, FaRegClock, FaCogs, FaMoneyBillWave, FaSolarPanel, FaChartLine, FaMoneyCheckAlt, FaHandsHelping } from "react-icons/fa";
+import {
+  FaBullseye,
+  FaRegClock,
+  FaCogs,
+  FaMoneyBillWave,
+  FaSolarPanel,
+  FaChartLine,
+  FaMoneyCheckAlt,
+  FaHandsHelping,
+} from "react-icons/fa";
 
 const MetricCard = ({ Icon, title, description }) => {
   return (
@@ -23,28 +32,28 @@ const MetricCard = ({ Icon, title, description }) => {
 export default function Metrics() {
   const metrics = [
     {
-      Icon: FaSolarPanel,
-      title: "Soluções de Energia Fotovoltaica",
+      Icon: FaChartLine,
+      title: "Nosso ROI",
       description:
-        "Desenvolvemos sistemas solares para residências, empresas e indústrias.",
+        "Com um custo médio de <b>R$ 15,00 por depositante</b>, conseguimos trazer bons resultados para sua plataforma.",
     },
     {
-      Icon: FaChartLine ,
-      title: "Compromisso com a Performance",
+      Icon: FaBullseye,
+      title: "Tipo de Campanha",
       description:
-        "Garantimos a produção de energia eficiente e de alta performance.",
+        "Especialistas em campanhas personalizadas, adequadas para diferentes plataformas e objetivos. <b>A taxa de conversão tem uma média maior que 50%</b>",
     },
     {
-      Icon: FaMoneyCheckAlt,
-      title: "Financiamento Personalizado",
+      Icon: FaRegClock,
+      title: "Nosso Acompanhamento",
       description:
-        "Oferecemos soluções exclusivas de financiamento para seu projeto solar.",
+        "Acompanhamento contínuo com relatórios detalhados e ajustes <b>estratégicos a cada HORA</b>. Recebemos relatório de cada campanha a cada 60 minutos e analisamos para ter o melhor resultado. ",
     },
     {
-      Icon: FaHandsHelping,
-      title: "Suporte Completo",
+      Icon: FaCogs,
+      title: "Automações",
       description:
-        "Cuidamos de todo o processo junto à distribuidora de energia.",
+        "Podemos desenvolver a automação que você precisar para ver seus resultados em tempo real",
     },
   ];
 
