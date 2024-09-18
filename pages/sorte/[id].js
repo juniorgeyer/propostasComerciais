@@ -131,7 +131,9 @@ export default function Home({ pageData }) {
                 rel="noreferrer"
                 href="#features"
               >
-                <span className="flex justify-center">Ver proposta</span>
+                <span href="#pricing" className="flex justify-center">
+                  Ver proposta
+                </span>
               </a>
               <br className="sm:hidden" />
               <Link href="404">
