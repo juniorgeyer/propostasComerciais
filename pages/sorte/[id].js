@@ -131,7 +131,7 @@ export default function Home({ pageData }) {
                 rel="noreferrer"
                 href="#features"
               >
-                <span href="#pricing" className="flex justify-center">
+                <span href="#footer" className="flex justify-center">
                   Ver proposta
                 </span>
               </a>
