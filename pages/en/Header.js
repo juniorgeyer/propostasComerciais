@@ -53,13 +53,13 @@ export default function Header() {
         >
           <div className="flex flex-wrap items-center justify-center pt-1 pl-2 ml-1 space-x-8 md:space-x-16 md:mx-auto md:pl-14">
             <a
-              href="/#faq"
+              href="#features"
               className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300"
             >
               Modules
             </a>
             <a
-              href="/#pricing"
+              href="#pricing"
               className="text-black transition duration-300 dark:text-gray-300 hover:text-gray-300"
             >
               Pricing

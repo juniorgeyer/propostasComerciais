@@ -41,7 +41,7 @@ const pageData = {
       title: "Kwai",
       items: [
         {
-          name: "Average CPA and deposit for Kwai",
+          name: "Average Cost per Deposit R$40,00",
         },
       ],
     },
@@ -49,7 +49,7 @@ const pageData = {
       title: "Google",
       items: [
         {
-          name: "Google average CPA and deposit",
+          name: "Google average Cost per Deposit R$63,00",
         },
       ],
     },
@@ -169,7 +169,7 @@ export default function Home() {
                 className="inline-flex items-center px-5 py-3 text-sm font-medium text-gray-300 transition duration-300 bg-black rounded hover:bg-gray-800 dark:hover:bg-gray-200 dark:text-gray-700 dark:bg-white"
                 aria-label="learn more"
                 rel="noreferrer"
-                href="#features"
+                href="#pricing"
               >
                 <span className="flex justify-center">See the plans</span>
               </a>
