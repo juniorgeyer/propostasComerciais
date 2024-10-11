@@ -25,7 +25,10 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
       <h1 className="text-xl font-bold text-center text-teal-600 dark:text-teal-300 md:text-2xl sm:text-left">
         {plan}
       </h1>
-      <p className="text-gray-600 text-md dark:text-gray-400">{description}</p>
+      <p
+        dangerouslySetInnerHTML={{ __html: description }}
+        className="text-gray-600 text-md dark:text-gray-400"
+      ></p>
       <div className="mt-8">
         <span className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
           {price}
