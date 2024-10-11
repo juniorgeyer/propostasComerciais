@@ -53,6 +53,14 @@ const pageData = {
         },
       ],
     },
+    {
+      title: "Meta (Facebook)",
+      items: [
+        {
+          name: "Meta average Cost per Deposit R$58,00",
+        },
+      ],
+    },
   ],
   Plans: [
     {
