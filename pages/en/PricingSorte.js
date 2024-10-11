@@ -34,7 +34,7 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
           {price}
         </span>
 
-        <p>Initial Setup: $1771.00 (one-time fee)</p>
+        <p>Initial Setup: $1800.00 (one-time fee)</p>
 
         <span className="text-base font-medium text-gray-500"></span>
         <button
