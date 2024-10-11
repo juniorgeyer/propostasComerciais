@@ -41,7 +41,7 @@ const pageData = {
       title: "Kwai",
       items: [
         {
-          name: "Average Cost per Deposit R$40,00",
+          name: "Average Cost per Deposit $7.08",
         },
       ],
     },
@@ -49,7 +49,7 @@ const pageData = {
       title: "Google",
       items: [
         {
-          name: "Google average Cost per Deposit R$63,00",
+          name: "Google average Cost per Deposit $11.15",
         },
       ],
     },
@@ -57,7 +57,7 @@ const pageData = {
       title: "Meta (Facebook)",
       items: [
         {
-          name: "Meta average Cost per Deposit R$58,00",
+          name: "Meta average Cost per Deposit $10.27",
         },
       ],
     },
@@ -65,9 +65,9 @@ const pageData = {
   Plans: [
     {
       Plan: "Plan 1",
-      Price: 40000,
+      Price: 7079.65,
       Description:
-        "Plan with a fixed monthly fee of R$40,000.00 + 10% of the NGR (Net Gaming Revenue)",
+        "Plan with a fixed monthly fee of $7,079.65 + 10% of the NGR (Net Gaming Revenue)",
       Features: [
         {
           name: "Kwai",
@@ -84,9 +84,9 @@ const pageData = {
     },
     {
       Plan: "Plan 2",
-      Price: 40000,
+      Price: 7079.65,
       Description:
-        "Plan with a fixed monthly fee of R$40,000.00 + 5% of the amount invested in marketing campaigns",
+        "Plan with a fixed monthly fee of $7,079.65 + 5% of the amount invested in marketing campaigns",
       Features: [
         {
           name: "Kwai",
@@ -103,9 +103,9 @@ const pageData = {
     },
     {
       Plan: "Plan 3",
-      Price: 40000,
+      Price: 7079.65,
       Description:
-        "Plan with a fixed monthly fee of R$40,000.00 + 2.5% of the total deposits made by players",
+        "Plan with a fixed monthly fee of $7,079.65 + 2.5% of the total deposits made by players",
       Features: [
         {
           name: "Kwai",

@@ -31,7 +31,7 @@ const PricingCard = ({ plan, price, description, features, buttonLabel }) => {
           {price}
         </span>
 
-        <p>Initial Setup: R$10,000.00 (one-time fee)</p>
+        <p>Initial Setup: $1771.00 (one-time fee)</p>
 
         <span className="text-base font-medium text-gray-500"></span>
         <button
@@ -67,9 +67,14 @@ const enviarMensagem = (plan) => {
 };
 
 const handleFormatPrice = (price) => {
-  return new Intl.NumberFormat("pt-BR", {
+  // return new Intl.NumberFormat("pt-BR", {
+  //   style: "currency",
+  //   currency: "BRL",
+  // }).format(price);
+
+  return new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "BRL",
+    currency: "USD",
   }).format(price);
 };
 
