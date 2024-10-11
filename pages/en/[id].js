@@ -67,7 +67,7 @@ const pageData = {
       Plan: "Plan 1",
       Price: 7000,
       Description:
-        "Plan with a fixed monthly fee of $7000.00 <strong>+ 10% of the NGR (Net Gaming Revenue)</strong>",
+        "Plan with a fixed monthly fee of $7,000.00 <strong>+ 10% of the NGR (Net Gaming Revenue)</strong>",
       Features: [
         {
           name: "Kwai",
@@ -86,7 +86,7 @@ const pageData = {
       Plan: "Plan 2",
       Price: 7000,
       Description:
-        "Plan with a fixed monthly fee of $7000.00 <strong>+ 5% of the amount invested in marketing campaigns</strong>",
+        "Plan with a fixed monthly fee of $7,000.00 <strong>+ 5% of the amount invested in marketing campaigns</strong>",
       Features: [
         {
           name: "Kwai",
@@ -105,7 +105,7 @@ const pageData = {
       Plan: "Plan 3",
       Price: 7000,
       Description:
-        "Plan with a fixed monthly fee of $7000.00 <strong>+ 2.5% of the total deposits made by our players</strong>",
+        "Plan with a fixed monthly fee of $7,000.00 <strong>+ 2.5% of the total deposits made by our players</strong>",
       Features: [
         {
           name: "Kwai",
